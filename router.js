@@ -3,22 +3,15 @@ const router = express.Router()
 const controller = require("./controller")
 
 
-router.get("/", (req, res)=>{
-  res.send("Hello World")
-})
 
 
 
 
-router.get('/login', controller.getlogin)
+router.get('/', controller.getlogin)
 
 router.post('/login', controller.postlogin)
 
 router.get("/send", controller.getsend)
-
-
-
-
 
 router.get('/singup', controller.getsingup)
 
